@@ -51,13 +51,14 @@
 
         <!-- [#1702] Upgrade to netty-4.1.9 -->
         <version.io.netty40>4.0.45.Final</version.io.netty40> 
-        <version.io.netty41>4.1.8.Final</version.io.netty41> 
+        <version.io.netty41>4.1.9.Final</version.io.netty41> 
 
         <!-- WildFly versions -->
-        <version.wildfly>10.1.0.Final</version.wildfly>
-        <version.wildfly.arquillian>1.0.2.Final</version.wildfly.arquillian>
-        <version.wildfly.fasterxml.jackson>2.7.4</version.wildfly.fasterxml.jackson>
-        <version.wildfly.infinispan>8.2.4.Final</version.wildfly.infinispan>
+        <version.wildfly>11.0.0.Final-SNAPSHOT</version.wildfly>
+        <version.wildfly.arquillian>2.1.0.Final</version.wildfly.arquillian>
+        <version.wildfly.fasterxml.jackson>2.8.9</version.wildfly.fasterxml.jackson>
+        <version.wildfly.infinispan>8.2.8.Final</version.wildfly.infinispan>
+        <version.wildfly.netty>4.1.9.Final</version.wildfly.netty>
         
         <!-- Other versions -->
         <version.apache.ds>2.0.0-M21</version.apache.ds>
@@ -82,7 +83,7 @@
         <version.codehaus.plexus.utils>3.0.15</version.codehaus.plexus.utils>
         <version.eclipse.egit.github>2.1.5</version.eclipse.egit.github>
         <version.flapdoodle.embed.mongo>1.50.1</version.flapdoodle.embed.mongo>
-        <version.fusepatch>2.6.0</version.fusepatch>
+        <version.fusepatch>3.0.0-SNAPSHOT</version.fusepatch>
         <version.greenmail>1.4.0</version.greenmail>
         <version.hawtio>1.5.3</version.hawtio>
         <version.javax.cache.api>1.0.0</version.javax.cache.api>
@@ -334,19 +335,6 @@
                 <artifactId>hawtio-wildfly</artifactId>
                 <version>${version.hawtio}</version>
                 <type>war</type>
-            </dependency>
-
-            <!-- HttpComponents -->
-            <!-- [FIXME #1357] Integrate with httpclient 4.5.2 when provided by WildFly -->
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpclient</artifactId>
-                <version>${version.apache.httpcomponents}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.httpcomponents</groupId>
-                <artifactId>httpmime</artifactId>
-                <version>${version.apache.httpcomponents}</version>
             </dependency>
 
             <!-- Infinispan -->
