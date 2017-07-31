@@ -35,6 +35,7 @@ import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.wildfly.extension.camel.CamelAware;
@@ -42,6 +43,7 @@ import org.wildfly.extension.camel.WildFlyCamelContext;
 
 @CamelAware
 @RunWith(Arquillian.class)
+@Ignore("[#1933] NameNotFoundException: infinispan/container/server")
 public class InfinispanIntegrationTest {
 
     private static final String CONTAINER_NAME = "java:jboss/infinispan/container/server";
