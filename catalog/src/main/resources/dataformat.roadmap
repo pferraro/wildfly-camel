@@ -37,6 +37,9 @@ zipfile
 [planned]
 
 [undecided]
+asn1
+json-fastjson
+thrift
 
 [rejected]
 boon

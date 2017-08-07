@@ -77,19 +77,19 @@
         <include artifact="com.google.android:android"/>
     </module>
 
-    <module name="com.google.guava.skipped" skip="true">
-        <include artifact="com.google.guava:guava-bootstrap-jdk5" />
-        <include artifact="com.google.guava:guava-jdk5" />
+    <module name="com.google.auto.value" skip="true">
+        <include artifact="com.google.auto.value:auto-value" />
     </module>
 
-    <module name="findbugs" skip="true">
+    <module name="com.google.code.findbugs" skip="true">
         <include artifact="com.google.code.findbugs:(.*)" />
         <include artifact="com.github.stephenc.findbugs:findbugs-annotations" />
         <include artifact="findbugs:annotations" />
     </module>
-    
-    <module name="com.google.auto.value" skip="true">
-        <include artifact="com.google.auto.value:auto-value" />
+
+    <module name="com.google.guava.skipped" skip="true">
+        <include artifact="com.google.guava:guava-bootstrap-jdk5" />
+        <include artifact="com.google.guava:guava-jdk5" />
     </module>
 
     <module name="com.google.inject.guice" skip="true">
@@ -142,6 +142,10 @@
     
     <module name="com.sun.xml.bind.jaxb.xjc" skip="true">
         <include artifact="com.sun.xml.bind:jaxb-xjc" />
+    </module>
+
+    <module name="com.zaxxer" skip="true">
+        <include artifact="com.zaxxer:HikariCP-java6" />
     </module>
 
     <module name="io.sundr.builder.annotations" skip="true">
@@ -233,6 +237,7 @@
     
     <module name="org.apache.servicemix.bundles" skip="true">
         <include artifact="org.apache.servicemix.bundles:org.apache.servicemix.bundles.javax-cache-api" />
+        <include artifact="org.apache.servicemix.bundles:org.apache.servicemix.bundles.jsr305" />
     </module>
     
     <module name="org.apache.tomcat.embed" skip="true">
@@ -283,9 +288,11 @@
         <include artifact="org.glassfish.web:javax.el" />
     </module>
     
-    <module name="org.infinispan.cdi" skip="true">
+    <module name="org.infinispan.skipped" skip="true">
         <include artifact="org.infinispan:infinispan-cdi-common" />
         <include artifact="org.infinispan:infinispan-cdi-embedded" />
+        <include artifact="org.infinispan:infinispan-license" />
+        <include artifact="org.infinispan:infinispan-remote-query-client" />
     </module>
 
     <module name="org.jboss.interceptor" skip="true">
